@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Electro | E-commerce website</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    nav ul{
+        display: inline-block;
+        list-style-type: none;
+
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: #555;
+    }
+    p{
+        color: #555;
+        font-size: 0.5cm;
+    }
+    .container{
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+    .col-2{
+        flex-basis: 50%;
+        min-height: 300px;
+    }
+    .col-2 img{
+        max-width: 100%;
+        padding: 50px 0;
+    }
+    .col-2 h1{
+        font-size: 50px;
+        line-height: 60px;
+        margin: 25px 0;
+    }
+    .btn{
+        display: inline-block;
+        background: #149ecb;
+        color: #fff;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        transition: background 0.5s;
+    }
+
+    .btn:hover{
+        background-color: #563434;
+
+    }
+    .header{
+        background: radial-gradient(#fff,#ffd6d6);
+    }
+    .header .row{
+        margin-top: 70px ;
+    }
+    .catogories{
+        margin: 70px 0;
+    }
+    .col-3{
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+    }
+    .col-3 img{
+        width: 100%;
+    }
+    .small-cot{
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px ;
+        padding-right: 25px;
+    }
+    .col-4{
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        transition: transform 0.5s;
+    }
+    .col-4 img{
+        width: 100%;
+    }
+    .title{
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+    h4{
+        color: #555;
+        font-weight: normal;
+    }
+    .col-4 p{
+        font-size: 14px;
+
+    }
+    .col-4:hover{
+        transform: translateY(-5px);
+    }
+    .offer{
+        background: radial-gradient(#fff,#ffd6d6);
+        margin-top: 80px;
+        padding: 30px 0px;
+    }
+    .col-2 .offerimg{
+        padding: 50px;
+    }
+    .brands{
+        margin: 100px auto;
+
+    }
+    .col-5{
+        width: 160px;
+    }
+    .col-5 img{
+        width: 100%;
+    }
+    .footer{
+        background-color: black;
+        color: #8a8a8a;
+        font-size: 14px;
+        padding: 60px 0 20px;
+    }
+    .footer p{
+        color: #8a8a8a;
+    }
+    .footer h3{
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .footer-col-1 ,.footer-col-2, .footer-col-3{
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+    .footer-col-1{
+        flex-basis: 30%;
+    }
+    
+    .footer-col-2{
+    
+    text-align: center;
+    }
+    .footer-col-2,.footer-col-3{
+        flex-basis: 12%;
+        text-align: center;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .app-logo{
+        margin-top: 20px;
+    }
+    .app-logo img{
+        width: 140px;
+    }
+    .row-2{
+        justify-content: space-between;
+        margin: 100px auto 50px;
+    }
+    select{
+        border: 1px solid #149ecb;
+        padding: 5px;
+    }
+    select:focus{
+        outline: none;
+    }
+    .page-btn{
+        margin: 0 auto 80px;
+    }
+    .page-btn span{
+        display: inline-block;
+        border: 1px solid #149ecb;
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
+    .page-btn span:hover{
+        background: #149ecb;
+        color: #fff;
+    }
+
+    .specification-tab{
+        width: 100%;
+        border: 1px groove;
+        
+        
+    }
+    td,tr{
+        border: 1px;
+        font-size: 20px;
+        padding: 8px;
+    }
+</style>
+
+</head>
+<body>
+
+
+
+
+ <div class="container">
+    <div class="navbar">
+        <div class="logo">
+     <img src="img/ElectroLogo-removebg-preview.png" alt="logo" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homeindex.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+         </div>
+ </div>
+ 
+
+ <div class="small-cot">
+     <div class="row">
+         <div class="col-2">
+             <img src="Img/apple 12 p7/APPLE 12 (1).jpg" width="100%" alt="">
+         </div>
+         <div class="col-2">
+         <h1>Iphone 12 </h1>
+         <h4>60000 rs</h4>
+         <select>
+             <option>64gb</option>
+             <option>128gb</option>
+             <option>512gb</option>
+         </select>
+         <a href="" class="btn">Add to cart</a>
+         <h3>Specification</h3>
+         <table class="specificatio-tab">
+            <tr> <td>OS  <td>ios 14</td> </td> </tr>
+            <tr>  </tr>
+            <tr><td>Package Dimensions   </td> <td>16.8 x 9 x 3.2 cm; 320 Grams </td>   </tr>
+            <tr></tr>
+        
+            
+            <tr> <td>Item model number</td> <td>MGJC3HN/A</td> </tr>
+            
+            <tr> <td>Connectivity technologies</td> <td>Wi-Fi</td> </tr>
+            
+            <tr> <td>Special features</td> <td>Front Camera, Dual Camera</td> </tr>
+            
+            <tr> <td>Battery Power Rating</td> <td>2815</td> </tr>
+            
+            <tr><td>Country of Origin </td> <td>India</td> </tr>
+            
+            <tr> <td>Item Weight</td> <td> 320 g</td></tr>
+            
+            
+            
+        </table>
+     
+         </div>
+     </div>
+ </div>
+ <br>
+ <br>
+ <br>
+<div class="small-cot">
+    
+    <div class="row">
+        <div class="col-4">
+            <a href="">
+                <img src="img/apple 12 p7/APPLE 12 (1).jpg" alt="">
+            <h4>Lenovo
+            </a>
+             A340 Desktop</h4>
+            <p>RS 40000</p>
+        </div>
+        <div class="col-4">
+            <a href="">
+                <img src="img/p9/SAMSUNG GALAXY S20 FE (1).jpg" alt="">
+            </a>
+            
+            <h4>Acer Nitro50</h4>
+            <p>RS 40000</p>
+        </div>
+        <div class="col-4">
+            <a href="">
+                <img src="img/p8/APPLE 13 (1).jpg" alt="">
+            <h4>Canon
+            </a>
+             M50</h4>
+            <p>RS 40000</p>
+        </div>
+        <div class="col-4">
+            <a href="">
+                <img src="img/p3/HP CHROMEBOOK N4020 (1).jpg" alt=""> 
+            </a>
+            
+            <h4>Dell Inspirion</h4>
+            <p>RS 65000</p>
+        </div>
+    </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+    </div>
+</div>
+
+
+<div class="brands">
+    <div class="small-cot">
+        <div class="row">
+            <div class="col5">
+                <img src="img/WhatsApp_Image_2022-05-19_at_2.19.52_PM-removebg-preview.png" alt="">
+            </div>
+            <div class="col5">
+                <img src="img/logo-oppo.png" alt="">
+            </div>
+            <div class="col5">
+                <img src="img/ap-ImResizer.jpg" alt="">
+            </div>
+            <div class="col5">
+                <img src="img/logo-philips.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3 style="font-size: 0.75cm;">
+                    Download Our App
+                </h3>
+                <p>Android and ios mobile Phone.</p>
+            <div class="app-logo">
+                <img src="img/app-store.png" alt="">
+                <img src="img/play-store.png" alt="">
+            </div>
+            </div>
+    <div class="footer-col-2">
+     <h3 style="font-size: 0.75cm;" >Useful Links</h3>
+     <ul>
+         <li> <a href="" style="font-size: 30px">coupons </a> </li>
+         <li> <a href="" style="font-size: 30px" >Blog Post </a> </li>
+         <li> <a href="" style="font-size: 30px" >Return Policy </a> </li>
+         <li> <a href="" style="font-size: 30px" >JOin Affiliate </a> </li>
+     </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3 style="font-size: 0.75cm;" >Find us on</h3>
+                <ul>
+                    <li> <a href="" style="font-size: 30px" >Facebook</a> </li>
+                    <li> <a href="" style="font-size: 30px" >Twitter</a></li>
+                    <li> <a href="" style="font-size: 30px" >Instagram</a></li>
+                    <li> <a href="" style="font-size: 30px" >YouTube</a></li>
+                </ul>
+                       </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
